@@ -12,7 +12,7 @@
     <h1 class="text-center">Welcome to Magnifier</h1>
     <h4 class="text-center">Search whatever you want and find it in less than 1sec</h4>
 </div>
-    <form class="search-bar" action="{% url 'magnifier:home' %}" method="POST">
+    <form class="search-bar" action="{% url 'magnifier:results' %}" method="POST">
         {% csrf_token %}
             <input type="text" name="search" class="form-control" id="formGroupExampleInput" placeholder="Search">
             <div class="submit-btn">
