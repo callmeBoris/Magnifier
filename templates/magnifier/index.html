@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}: Welcome {% endblock %}
+
+{% block content %}
+
+<div class="img-welcome">
+        <img class="img-fluid" src="{% static 'images/source-1.gif' %}" alt="">
+</div>
+<div class="welcome">
+    <h1 class="text-center">Welcome to Magnifier</h1>
+    <h4 class="text-center">Search whatever you want and find it in less than 1sec</h4>
+</div>
+    <form class="search-bar" action="{% url 'magnifier:home' %}" method="POST">
+        {% csrf_token %}
+            <input type="text" name="search" class="form-control" id="formGroupExampleInput" placeholder="Search">
+            <div class="submit-btn">
+                <input type="submit" class="btn btn-primary" value="Search" style="margin-top: 3rem;">
+            </div>
+    </form>
+
+
+{% endblock %}
