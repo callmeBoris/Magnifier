@@ -3,5 +3,6 @@ from . import views
 
 app_name = 'magnifier'
 urlpatterns = [
-    path('', views.home, name='home')
+    path('', views.home, name='home'),
+    path('/results', views.results, name='results')
 ]
