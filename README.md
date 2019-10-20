@@ -43,6 +43,7 @@
     - Django 2.2.5
     - Anaconda
     - Postgresql
+    - Bootstrap4
 
 # Deployment
     Heroku
