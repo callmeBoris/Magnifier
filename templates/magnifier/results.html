@@ -7,7 +7,7 @@
 
 <form class="form-inline md-form form-sm mt-0" action="{% url 'magnifier:results' %}" method="POST" style="margin-top: 3rem !important; margin-bottom:2rem !important;">
     {% csrf_token %}
-    <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+    <input class="form-control form-control-sm ml-3 w-75" type="text" name="search" placeholder="Search" aria-label="Search">
     <input type="submit" class="btn btn-primary" value="Search">
 </form>
 
@@ -18,13 +18,12 @@
 <div class="row search-row" style="margin-bottom: 3rem;">
     {% for result in results %}
     <div class="col-lg-6 col-md-6 col-sm-12 col-12 search-col">
-        <div class="card">
+        <div class="card" style="height: 620px !important; margin-top:2rem; margin-bottom:2rem;">
             <img src="{{ result.4 }}" alt="" class="img-fluid">
             <div class="card-body">
                 <h6 class="card-subtitle">{{ result.0 }}</h6>
-                <h5 class="card-title">{{ result.1 }}</h5>
+                <a href="{{ result.2 }}" class="card-title" style="font-size: 1.5em; font-weight: bolder;">{{ result.1 }}</a>
                 <p class="card-text">{{ result.3 }}</p>
-                 <a href="{{ result.2 }}" class="btn btn-success">Read more</a>
             </div>
         </div>
     </div>
