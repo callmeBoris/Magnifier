@@ -16,14 +16,19 @@
 </div>
 
 <div class="row search-row" style="margin-bottom: 3rem;">
+    {% for result in results %}
     <div class="col-lg-6 col-md-6 col-sm-12 col-12 search-col">
         <div class="card">
-            <img src="" alt="" class="img-fluid">
+            <img src="{{ result.4 }}" alt="" class="img-fluid">
             <div class="card-body">
-
+                <h6 class="card-subtitle">{{ result.0 }}</h6>
+                <h5 class="card-title">{{ result.1 }}</h5>
+                <p class="card-text">{{ result.3 }}</p>
+                 <a href="{{ result.2 }}" class="btn btn-success">Read more</a>
             </div>
         </div>
     </div>
+    {% endfor %}
 </div>
 
 {% endblock %}
