@@ -1,1 +1,1 @@
-# Magnifier is an app that allow the user to search products on Amazon 
+# Magnifier is an app that allows the user to search products on Amazon 
