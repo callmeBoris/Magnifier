@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'EyesOnIt.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Magnifier_db',
-        'USER': 'dev_user',
-        'PASSWORD': 'developer',
-        'HOST': 'localhost',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '******',
+        'HOST': '',
     }
 }
 
