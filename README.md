@@ -1,5 +1,5 @@
 # Magnifier
- A web page which allows the user to find any web design article posted on https://www.webdesignerdepot.com.
+ A web search engine which allows the user to find any web design article posted on https://www.webdesignerdepot.com.
 
  ## Setup and installation
 
