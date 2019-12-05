@@ -55,8 +55,8 @@
 # Technologies used
 
    - Git
-   - Pyhton3.7.4
-   - Django 2.2.5
+   - Pyhton3.8
+   - Django 3.0
    - Anaconda
    - Postgresql
    - Bootstrap4
